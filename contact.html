@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Header */
+        header {
+            background-color: #2C3E50;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #1ABC9C;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px auto;
+            max-width: 800px;
+        }
+
+        .contact-method {
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form input[type="submit"] {
+            background-color: #2C3E50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #1ABC9C;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Mon Site Personnel</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="experiences.html">Expériences</a></li>
+                <li><a href="manifestations.html">Manifestations</a></li>
+                <li><a href="matieres.html">Matières</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="quizz.html">Quizz</a></li>
+                <li><a  class="active" href="contact.html">Contact</a></li>
+                <li><a href="temoignage.html">Témoignage</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+       
+        <div class="contact-container">
+            <div class="contact-method">
+                <i class="fa-brands fa-whatsapp fa-2x" style="color: green;"></i>
+                <p><strong>WhatsApp :</strong> <a href="https://wa.me/1234567890" target="_blank">+216 20 023 143</a></p>
+            </div>
+            <div class="contact-method">
+                <i class="fa-solid fa-envelope fa-2x" style="color: red;"></i>
+                <p><strong>Email :</strong> <a href="mailto:xxx@gmail.com">zaynebrk@gmail.com</a></p>
+            </div>
+            <div class="contact-method">
+                <i class="fa-brands fa-facebook fa-2x" style="color: blue;"></i>
+                <p><strong>Facebook :</strong> <a  href="https://www.facebook.com/username" target="_blank">facebook.com/username</a></p>
+            </div>
+        </div>
+
+        <h3 style="text-align: center;">Envoyer un Message directement vers mon Email</h3>
+        <form action="mailto:zaynebrk@gmail.com" method="post" enctype="text/plain">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Votre email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="6" placeholder="Votre message ici..."></textarea>
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </section>
+ 
+
+</body>
+<script src="js/contact.js"></script>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passions et Sports</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .passion-section {
+            margin: 30px auto;
+            padding: 20px;
+            max-width: 800px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .passion-section img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        .passion-section h2 {
+            color: #1ABC9C;
+        }
+        
+         /* Section Profil */
+         .profile-section {
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+              margin: 20px 0;;
+            
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit:cover;
+            object-position: center 15%; /* Moves the image downward */
+            border: 3px solid #1ABC9C;
+            margin-right: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Mon Site Personnel</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="experiences.html">Expériences</a></li>
+                <li><a href="manifestations.html">Manifestations</a></li>
+                <li><a href="matieres.html">Matières</a></li>
+                <li><a class="active" href="passions.html">Passions</a></li>
+                <li><a href="quizz.html">Quizz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="temoignage.html">Témoignage</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- Section Profil -->
+<section class="profile-section">
+   
+        <img src="images/profile-pic1.jpg"  alt="Photo de profil" class="profile-picture">
+        <div class="contact-info">
+            <p><strong>📞 WhatsApp :</strong> +216 20 023 143</p>
+            <p><strong>📧 Email :</strong> zaynebrk@gmail.com</p>
+            <p><strong>📍 Localisation :</strong> Sfax, Tunisie</p>
+        </div>
+        
+    
+</section> 
+    <section class="passion-section">
+        <h2>Passions</h2>
+        <p>Je suis passionné par le développement de jeux, la lecture et les arts.</p>
+        <p style="font-style: italic;">Exemple d'un jeux développé par Unity: </p>
+        <video width="30%" controls>
+            <source src="videos/myFirstgame.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture vidéo.
+        </video>
+        <h2>Sports</h2>
+        <p>J'aime jouer au tennis et pratiquer la peinture.</p>
+        <img src="images/sport.jpg" alt="Activité Sportive" width="300">
+    </section>
+</body>
+</html>

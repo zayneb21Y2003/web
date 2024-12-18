@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matières et Projets</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .matieres-section {
+            margin: 30px auto;
+            padding: 20px;
+            max-width: 800px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .matieres-section h2 {
+            color: #1ABC9C;
+            margin-bottom: 15px;
+        }
+
+        .matieres-section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .matieres-section ul li {
+            margin-bottom: 10px;
+        }
+
+         /* Section Profil */
+         .profile-section {
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit:cover;
+            object-position: center 15%;
+            border: 3px solid #1ABC9C;
+            margin-right: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+
+        .project-card {
+            margin: 30px auto;
+            padding: 20px;
+            max-width: 900px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 80%;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        
+
+     
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Mon Site Personnel</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="experiences.html">Expériences</a></li>
+                <li><a href="manifestations.html">Manifestations</a></li>
+                <li><a class="active" href="matieres.html">Matières</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="quizz.html">Quizz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="temoignage.html">Témoignage</a></li>
+            </ul>
+        </nav>
+    </header>
+
+      <!-- Section Profil -->
+      <section class="profile-section">
+        <img src="images/profile-pic1.jpg"  alt="Photo de profil" class="profile-picture">
+        <div class="contact-info">
+            <p><strong>📞 WhatsApp :</strong> +216 20 023 143</p>
+            <p><strong>📧 Email :</strong> zaynebrk@gmail.com</p>
+            <p><strong>📍 Localisation :</strong> Sfax, Tunisie</p>
+        </div>
+    
+    </section>
+
+
+    <section class="matieres-section">
+        <h2>Matières Principales</h2>
+        <ul>
+            <li>Programmation Web</li>
+            <li>Base de Données</li>
+            <li>Python</li>
+            <li>Systèmes d'exploitation</li>
+            <li>Programmation C</li>
+            <li>Architecture des ordinateurs</li>
+            <li>Algorithmes et Structures de Données</li>
+        </ul>
+               
+    </section>
+<div class="project-card">
+    <h2>Projets Réalisés</h2>
+    <ul>
+        <li>Développement d'une application de gestion de bibliothèque avec Angular et Node.js</li>
+        <li>Création d'un site web e-commerce avec HTML, CSS et JavaScript</li>
+    </ul>
+</div>
+
+</body>
+</html>

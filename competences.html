@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences Informatiques</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+       
+  
+        /* Section Compétences */
+        .compétences-section {
+            margin: 30px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .compétences-section h2 {
+            color: #1ABC9C;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .compétences-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .compétences-section ul li {
+            background-color: #f9f9f9;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .compétences-section ul li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .compétences-section ul li strong {
+            color: #333;
+        }
+
+         /* Section Profil */
+         .profile-section {
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit:cover;
+            object-position: center 15%; /* Moves the image downward */
+            border: 3px solid #1ABC9C;
+            margin-right: 20px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+ 
+    <header>
+        <div class="logo">Mon Site Personnel</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a class="active" href="competences.html">Compétences</a></li>
+                <li><a href="experiences.html">Expériences</a></li>
+                <li><a href="manifestations.html">Manifestations</a></li>
+                <li><a href="matieres.html">Matières</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="quizz.html">Quizz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="temoignage.html">Témoignage</a></li>
+            </ul>
+        </nav>
+    </header>
+
+      <!-- Section Profil -->
+      <section class="profile-section">
+        <img src="images/profile-pic1.jpg"  alt="Photo de profil" class="profile-picture">
+        <div class="contact-info">
+            <p><strong>📞 WhatsApp :</strong> +216 20 023 143</p>
+            <p><strong>📧 Email :</strong> zaynebrk@gmail.com</p>
+            <p><strong>📍 Localisation :</strong> Sfax, Tunisie</p>
+        </div>
+    
+    </section>
+
+    <!-- Section Compétences -->
+    <section class="compétences-section">
+        <h2>Technologies Maîtrisées</h2>
+        <ul>
+            <li><strong>Langages :</strong> Java, C#, Dart</li>
+            <li><strong>Frameworks :</strong> Flutter, SpringBoot</li>
+            <li><strong>SGBD :</strong> MySQL, MongoDB</li>
+            <li><strong>Outils :</strong> Git, Docker, Visual Studio Code, Android Studio, Eclipse</li>
+            <li><strong>Méthodes :</strong> Scrum</li>
+            <li><strong>Autres :</strong> Unity Game Engine</li>
+        </ul>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer>
+        © 2024 Zayneb Rekik | Tous droits réservés
+    </footer>
+</body>
+</html>

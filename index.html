@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site Personnel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+      
+
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            max-width: 900px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center 15%; /* Moves the image downward */
+            margin-bottom: 15px;
+            border: 3px solid #1ABC9C;
+        }
+
+        .profile-container p {
+            font-size: 18px;
+            color: #555;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #1ABC9C;
+        }
+
+        /* Section Aperçu */
+        .overview-section {
+            background-color: #fff;
+            margin: 30px auto;
+            padding: 20px;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .overview-section h2 {
+            color: #1ABC9C;
+            margin-bottom: 15px;
+        }
+
+        .overview-cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .overview-card {
+            flex: 1 1 calc(30% - 20px);
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .overview-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .overview-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .overview-card p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Section CTA */
+        .cta-section {
+            background-color: #1ABC9C;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+
+        .cta-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .cta-section a {
+            background-color: white;
+            color: #1ABC9C;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .cta-section a:hover {
+            background-color: #16A085;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Mon Site Personnel</div>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Accueil</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="experiences.html">Expériences</a></li>
+                <li><a href="manifestations.html">Manifestations</a></li>
+                <li><a href="matieres.html">Matières</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="quizz.html">Quizz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="temoignage.html">Témoignage</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="profile-container">
+        <img src="images/profile-pic1.jpg" alt="Photo de profil" class="profile-pic">
+        <h1>Bienvenue sur Mon Site Personnel</h1>
+        <p>Bonjour, je suis Zayneb Rkik. Étudiant en Génie Informatique, voici mon parcours, mes compétences, et mes passions. Explorez mon site pour découvrir mes projets et mon expertise !</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/xxxxxx" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a href="https://wa.me/xxxxxxx" target="_blank"><i class="fa-brands fa-whatsapp fa-2x" style="color: green;"></i></a>
+            <a href="mailto:xxx@gmail.com"><i class="fa-solid fa-envelope fa-2x" style="color: red;"></i></a>
+        </div>
+    </section>
+
+    <section class="overview-section">
+        <h2>Aperçu de mon site</h2>
+        <div class="overview-cards">
+            <div class="overview-card">
+                <h3>Parcours</h3>
+                <p>Découvrez mon parcours académique et professionnel.</p>
+            </div>
+            <div class="overview-card">
+                <h3>Compétences</h3>
+                <p>Une liste détaillée des compétences techniques que j'ai acquises.</p>
+            </div>
+            <div class="overview-card">
+                <h3>Projets</h3>
+                <p>Consultez les projets sur lesquels j'ai travaillé, de la conception au déploiement.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Vous voulez en savoir plus ?</h2>
+        <a href="contact.html">Contactez-moi</a>
+    </section>
+</body>
+</html>

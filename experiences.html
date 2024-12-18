@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expériences Professionnelles</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Styles généraux */
+     
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #1ABC9C; /* Vert clair */
+        }
+
+        /* Section Profil */
+        .profile-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit:cover;
+            object-position: center 15%; /* Moves the image downward */
+            border: 3px solid #1ABC9C;
+            margin-right: 20px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        /* Section Expériences */
+        .experience-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px;
+        }
+
+        .experience-card {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 65%;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .experience-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .experience-card h3 {
+            margin: 0;
+            color: #1ABC9C;
+            font-size: 20px;
+        }
+
+        .experience-card p {
+            margin: 10px 0 0 0;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .experience-card strong {
+            color: #333;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Nouveau Header -->
+    <header>
+        <div class="logo">Mon Site Personnel</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a class="active" href="experiences.html">Expériences</a></li>
+                <li><a href="manifestations.html">Manifestations</a></li>
+                <li><a href="matieres.html">Matières</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="quizz.html">Quizz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="temoignage.html">Témoignage</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Profil -->
+    <section class="profile-section">
+        <img src="images/profile-pic1.jpg"  alt="Photo de profil" class="profile-picture">
+        <div class="contact-info">
+            <p><strong>📞 WhatsApp :</strong> +216 20 023 143</p>
+            <p><strong>📧 Email :</strong> zaynebrk@gmail.com</p>
+            <p><strong>📍 Localisation :</strong> Sfax, Tunisie</p>
+        </div>
+    
+    </section>
+
+    <!-- Section Expériences -->
+<section class="experience-section">
+    <h2>Stages et Expériences</h2>
+
+    <div class="experience-card">
+        <h3>Stage Développement FrontEnd</h3>
+        <p><strong>Entreprise BeeCoders</strong> - 3 mois (Été 2023)</p>
+        <p>Développement d'une application mobile en Flutter et intégration de Firebase pour les fonctionnalités backend.</p>
+        <p  style="font-style: italic;">Voir un exemple de vidéo du projet :</p>
+        <video width="30%" controls>
+            <source src="videos/view-calendar-infacebook.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture vidéo.
+        </video>
+    </div>
+
+    <div class="experience-card">
+        <h3>Stage PFE</h3>
+        <p><strong>Entreprise BeeCoders</strong> - 6 mois (Février - Août 2024)</p>
+        <p>Développement d'une application mobile de gestion des réseaux sociaux en utilisant Flutter (FrontEnd), Spring Boot (BackEnd), MongoDB, Firebase et Facebook GraphAPI.</p>
+        <p style="font-style: italic;">Voir un exemple de vidéo du projet :</p>
+        <video width="30%" controls>
+            <source src="videos/QuestRecord.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture vidéo.
+        </video>
+    </div>
+</section>
+
+
+    <!-- Pied de page -->
+    <footer>
+        © 2024 Zayneb Rkik | Tous droits réservés
+    </footer>
+</body>
+</html>

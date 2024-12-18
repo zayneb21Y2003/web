@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Témoignage sur l'IIT</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    /* Section Profil */
+    .profile-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit:cover;
+            object-position: center 15%; /* Moves the image downward */
+            border: 3px solid #1ABC9C;
+            margin-right: 20px;
+        }
+
+    .contact-info p {
+        margin: 5px 0;
+        font-size: 16px;
+    }
+
+    /* Section Témoignage */
+    .temoignage-section {
+        background-color: #ece8e8;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 40px auto;
+        max-width: 800px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        font-family: 'Arial', sans-serif;
+    }
+
+    .temoignage-section h2 {
+        text-align: center;
+        color: #1ABC9C;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .temoignage-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .temoignage-card {
+        background-color: #f3f2f2;
+        border-radius: 10px;
+        padding: 20px;
+        max-width: 250px;
+        text-align: center;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .temoignage-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .temoignage-card img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    .temoignage-card p {
+        font-size: 14px;
+        color: #555;
+    }
+</style>
+<body>
+    <header>
+        <div class="logo">Mon Site Personnel</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="experiences.html">Expériences</a></li>
+                <li><a href="manifestations.html">Manifestations</a></li>
+                <li><a href="matieres.html">Matières</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="quizz.html">Quizz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="temoignage.html">Témoignage</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Profil -->
+    <section class="profile-section">
+        <img src="images/profile-pic1.jpg"  alt="Photo de profil" class="profile-picture">
+        <div class="contact-info">
+            <p><strong>📞 WhatsApp :</strong> +216 20 023 143</p>
+            <p><strong>📧 Email :</strong> zaynebrk@gmail.com</p>
+            <p><strong>📍 Localisation :</strong> Sfax, Tunisie</p>
+        </div>
+    
+    </section>
+
+    <!-- Section Témoignage -->
+    <section class="temoignage-section">
+        <div style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+            <h2>Découvrez Mon Expérience à l'IIT</h2>
+            <img src="images/logo IIT.png" alt="Logo IIT" style="height: 50px;">
+        </div>
+        
+        <div class="temoignage-content">
+            <div class="temoignage-card">
+                <img src="images/campus.jfif" alt="Locaux de l'université">
+                <p>Les locaux modernes m'ont offert un espace idéal pour apprendre et innover.</p>
+            </div>
+            <div class="temoignage-card">
+                <img src="images/JI2.jpg" alt="Workshop">
+                <p>Des workshops enrichissants qui m'ont permis de collaborer avec des experts.</p>
+            </div>
+            <div class="temoignage-card">
+                <img src="images/AE.png" alt="Événements universitaires">
+                <p>Des événements mémorables qui m'ont aidé à élargir mon réseau professionnel.</p>
+            </div>
+            <div class="temoignage-card">
+                <img src="images/convention EIL.jpg" alt="Accréditation">
+                <p>Une accréditation qui renforce la reconnaissance internationale de l'université.</p>
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>
